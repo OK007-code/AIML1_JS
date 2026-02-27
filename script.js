@@ -41,7 +41,7 @@ document.write("Starting Loop"+"<br>");
 for(count=1;count<=10;count++){
   document.write("Current Count:"+count+"<br>");
 }
-document.write("Loop stopped");*/
+document.write("Loop stopped");
 const person = {
   fname : "Jivisha",
   lmane : "Gupta",
@@ -50,3 +50,46 @@ const person = {
 for(let x in person){
   console.log("personal details:"+x+":"+person[x])
 }
+var count=0;
+document.write("Starting Loop");
+while(count<10){
+  document.write("Current Count:"+count+"<br>");
+  count++;
+}
+document.write("Loop stopped");
+
+var age = 1;
+if(age>=18){
+  document.write("You are eligible to vote");
+}
+else{
+  document.write("u are jivisha");
+}
+var grade = 'E';
+document.write("Entering switch block <br/>");
+switch(grade){
+  case'A':
+    document.write("Good Job<br/>");
+    break;
+
+  case'B':
+    document.write("Pretty Good<br/>");
+    break;
+
+  case'C':
+    document.write("Passed<br/>");
+    break;
+
+  case'D':
+    document.write("Not so good<br/>");
+    break;
+
+  default:
+    document.write("Fail ho aap LOLOLOLOLOLOL<br/>");
+}
+document.write("Exiting switch block <br/>");*/
+var res = mul(5,10);
+function mul(x,y){
+  return x*y;
+}
+document.write(res)
