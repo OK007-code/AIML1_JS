@@ -87,9 +87,31 @@ switch(grade){
   default:
     document.write("Fail ho aap LOLOLOLOLOLOL<br/>");
 }
-document.write("Exiting switch block <br/>");*/
+document.write("Exiting switch block <br/>");
 var res = mul(5,10);
 function mul(x,y){
   return x*y;
 }
 document.write(res)
+var add2=(a,b)=>{
+  console.log(a+b);
+  };  add2(102,20);
+
+  var person = {
+    name : "Jivisha",
+    age : 18,
+  isMarried : true,
+  address : {
+    street : "ABCStreet",
+    flatNO : 209
+  }
+}; console.log(person["name"]+" "+person["age"]);*/
+  
+var person2 = new Object();
+person2.name = "Omika";
+person2.age = 18;
+person2.isMarried = false;
+person2.adress = {};
+person2.adress.street = "GNW";
+//person2["adress"]["flatNO"] = 605;
+console.log(person2);
