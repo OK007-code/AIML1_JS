@@ -105,7 +105,7 @@ var add2=(a,b)=>{
     street : "ABCStreet",
     flatNO : 209
   }
-}; console.log(person["name"]+" "+person["age"]);*/
+}; console.log(person["name"]+" "+person["age"]);
   
 var person2 = new Object();
 person2.name = "Omika";
@@ -113,5 +113,30 @@ person2.age = 18;
 person2.isMarried = false;
 person2.adress = {};
 person2.adress.street = "GNW";
-//person2["adress"]["flatNO"] = 605;
+person2["adress"]["flatNO"] = 605;
 console.log(person2);
+
+var myinfo = new Array();
+var myinfo2 = Array();
+console.log(myinfo, myinfo2);
+let collection = [
+  {},
+  [],
+  true,
+  "john",
+  function () {},
+  9007,
+  undefined,
+  null,
+  new String('abc'),
+  new Date(),
+];
+collection.teachername = "Jivisha";
+collection.phoneNo = 1234567890;
+console.log(collection[collection.length-1]);*///accesses the last element of the array
+const result = document.getElementById("para");
+result.innerHTML = "my self";
+result.title = "myname";
+const result2 = document.getElementsByClassName("heading");
+result2.innerHTML = "Hii";
+
