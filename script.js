@@ -133,10 +133,42 @@ let collection = [
 ];
 collection.teachername = "Jivisha";
 collection.phoneNo = 1234567890;
-console.log(collection[collection.length-1]);*///accesses the last element of the array
+console.log(collection[collection.length-1]);//accesses the last element of the array
 const result = document.getElementById("para");
 result.innerHTML = "my self";
 result.title = "myname";
 const result2 = document.getElementsByClassName("heading");
 result2.innerHTML = "Hii";
+
+const element = document.getElementById("myH1");
+let text = element.getAttribute("class");
+document.getElementById("demo").innerHTML = text;
+
+function myFunction() {
+  document.getElementById("myH1").setAttribute("class", "democlass");}
+  const heading = document.createElement("h2");
+  const bodytag = document.getElementByTagName("body");
+  bodytag[0].append(heading);
+
+function practical(){
+document.open();
+document.write("<h1>PRACTICE</h1>");
+document.close();
+}
+
+function onMouseOver(){
+  console.log("ON mouse Over");
+}*/
+const x = document.querySelector("Input");
+x.addEventListener("focus", onhandlefocus);
+x.addEventListener("blur", onhandleblur);
+function onhandlefocus(){
+  x.style.backgroundColor = "yellow";
+}
+function onhandleblur(){
+  x.style.backgroundColor = "white";
+  x.style.color = "red";
+}
+
+
 
